@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crie seu currículo profissional gratuitamente com modelos personalizáveis.">
+  <title>MeuCurrículo | Criador de Currículos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-icon">M</span> Meu<span>Currículo</span></a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#criador">Criar currículo</a>
+    </nav>
+    <a class="nav-cta" href="#criador">Começar agora <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> SEU PRÓXIMO PASSO COMEÇA AQUI</span>
+        <h1>Seu talento merece um <em>currículo</em> à altura.</h1>
+        <p>Monte um currículo profissional em poucos minutos. Escolha um modelo, preencha seus dados e baixe gratuitamente em PDF.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#criador">Criar meu currículo <span>→</span></a>
+          <a class="text-link" href="#modelos">Conhecer os modelos</a>
+        </div>
+        <div class="hero-notes"><span>✓ 100% gratuito</span><span>✓ Fácil de editar</span><span>✓ Pronto para PDF</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-top">✦ Seu futuro começa hoje</div>
+        <div class="sample-paper">
+          <div class="sample-head"><div class="sample-avatar">JS</div><div><b>João Silva</b><small>Analista de Marketing</small></div></div>
+          <div class="sample-line wide"></div><div class="sample-line"></div>
+          <div class="sample-section">EXPERIÊNCIA</div>
+          <div class="sample-line wide"></div><div class="sample-line short"></div>
+          <div class="sample-section">FORMAÇÃO</div>
+          <div class="sample-line wide"></div><div class="sample-line"></div>
+          <div class="sample-section">HABILIDADES</div>
+          <div class="sample-pills"><i></i><i></i><i></i></div>
+        </div>
+        <div class="floating-tag tag-bottom">PDF pronto para enviar <b>↗</b></div>
+        <div class="sparkle s1">✳</div><div class="sparkle s2">✦</div>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <div class="section-heading"><span class="eyebrow">SEM COMPLICAÇÃO</span><h2>Um bom currículo em <em>3 passos</em></h2><p>Você cuida da sua história. A gente ajuda a apresentar ela bem.</p></div>
+      <div class="steps">
+        <article><div class="step-number">01</div><div class="step-icon">▤</div><h3>Escolha um modelo</h3><p>Selecione o visual que combina com seu objetivo profissional.</p></article>
+        <article><div class="step-number">02</div><div class="step-icon">✎</div><h3>Preencha seus dados</h3><p>Adicione suas informações e veja o currículo ganhar forma.</p></article>
+        <article><div class="step-number">03</div><div class="step-icon">↓</div><h3>Baixe em PDF</h3><p>Faça o download gratuito e compartilhe com as empresas.</p></article>
+      </div>
+    </section>
+
+    <section class="models-section" id="modelos">
+      <div class="section-heading"><span class="eyebrow">SEU ESTILO, SUA HISTÓRIA</span><h2>Modelos para cada <em>momento</em></h2><p>Escolha entre seis estilos diferentes. Você pode trocar de modelo quando quiser.</p></div>
+      <div class="model-grid">
+        <button class="model-card selected" data-template="classico"><div class="mini-cv classic"><b>SEU NOME</b><i></i><i></i><strong>EXPERIÊNCIA</strong><i></i><i></i><strong>FORMAÇÃO</strong><i></i></div><span>01 · Clássico</span><small>Tradicional e organizado</small></button>
+        <button class="model-card" data-template="moderno"><div class="mini-cv modern"><b>SEU NOME</b><i></i><i></i><strong>PERFIL</strong><i></i><strong>EXPERIÊNCIA</strong><i></i></div><span>02 · Moderno</span><small>Visual atual e elegante</small></button>
+        <button class="model-card" data-template="profissional"><div class="mini-cv professional"><b>SEU NOME</b><i></i><strong>RESUMO</strong><i></i><strong>HISTÓRICO</strong><i></i><i></i></div><span>03 · Profissional</span><small>Direto e corporativo</small></button>
+        <button class="model-card" data-template="minimalista"><div class="mini-cv minimal"><b>SEU NOME</b><i></i><strong>OBJETIVO</strong><i></i><strong>FORMAÇÃO</strong><i></i></div><span>04 · Minimalista</span><small>Simples e leve</small></button>
+        <button class="model-card" data-template="criativo"><div class="mini-cv creative"><b>SEU NOME</b><i></i><i></i><strong>IDEIAS & PROJETOS</strong><i></i><strong>EXPERIÊNCIA</strong><i></i></div><span>05 · Criativo</span><small>Personalidade em destaque</small></button>
+        <button class="model-card" data-template="primeiro"><div class="mini-cv first"><b>SEU NOME</b><i></i><strong>OBJETIVO</strong><i></i><strong>FORMAÇÃO</strong><i></i><strong>HABILIDADES</strong></div><span>06 · Primeiro emprego</span><small>Valoriza seu potencial</small></button>
+      </div>
+    </section>
+
+    <section class="builder-section" id="criador">
+      <div class="section-heading"><span class="eyebrow">VAMOS COMEÇAR</span><h2>Crie seu <em>currículo</em></h2><p>Preencha apenas os campos que fazem sentido para você. Os dados são atualizados na prévia.</p></div>
+      <div class="builder-layout">
+        <form id="resumeForm" class="form-panel">
+          <div class="form-title"><div><span class="eyebrow">SEUS DADOS</span><h3>Informações do currículo</h3></div><span class="secure-label">● Edição local</span></div>
+          <div class="form-block">
+            <h4><span>01</span> Informações pessoais</h4>
+            <div class="fields">
+              <label class="full">Nome completo<input id="name" placeholder="Ex.: Maria Silva"></label>
+              <label>Profissão / área<input id="role" placeholder="Ex.: Estudante de Informática"></label>
+              <label>E-mail<input id="email" type="email" placeholder="seuemail@exemplo.com"></label>
+              <label>Telefone<input id="phone" placeholder="(00) 00000-0000"></label>
+              <label>Cidade e estado<input id="city" placeholder="Ex.: Dianópolis - TO"></label>
+              <label class="full">LinkedIn ou portfólio <input id="linkedin" placeholder="linkedin.com/in/seunome"></label>
+            </div>
+          </div>
+          <div class="form-block">
+            <h4><span>02</span> Objetivo e resumo</h4>
+            <div class="fields">
+              <label class="full">Objetivo profissional<textarea id="objective" rows="2" placeholder="Ex.: Busco uma oportunidade para desenvolver minhas habilidades..."></textarea></label>
+              <label class="full">Resumo profissional<textarea id="summary" rows="3" placeholder="Conte um pouco sobre você, suas qualidades e experiências."></textarea></label>
+            </div>
+          </div>
+          <div class="form-block">
+            <h4><span>03</span> Formação acadêmica</h4>
+            <div class="fields">
+              <label class="full">Curso / instituição<input id="education" placeholder="Ex.: Ensino Médio — Instituto Federal"></label>
+              <label>Ano ou período<input id="educationDate" placeholder="Ex.: 2024 – 2026"></label>
+              <label>Status<input id="educationStatus" placeholder="Ex.: Cursando"></label>
+            </div>
+          </div>
+          <div class="form-block">
+            <h4><span>04</span> Experiência profissional</h4>
+            <div class="fields">
+              <label>Empresa<input id="company" placeholder="Nome da empresa"></label>
+              <label>Cargo<input id="job" placeholder="Cargo ou função"></label>
+              <label class="full">Período<input id="jobDate" placeholder="Ex.: Jan/2025 – Dez/2025"></label>
+              <label class="full">Atividades realizadas<textarea id="jobDescription" rows="3" placeholder="Descreva suas principais atividades."></textarea></label>
+            </div>
+          </div>
+          <div class="form-block">
+            <h4><span>05</span> Cursos e habilidades</h4>
+            <div class="fields">
+              <label class="full">Cursos e certificações<textarea id="courses" rows="2" placeholder="Um curso por linha"></textarea></label>
+              <label class="full">Habilidades e competências<textarea id="skills" rows="2" placeholder="Ex.: Comunicação, trabalho em equipe, HTML, CSS"></textarea></label>
+              <label>Idiomas<input id="languages" placeholder="Ex.: Português (nativo), Inglês (básico)"></label>
+              <label>Projetos / atividades<input id="projects" placeholder="Ex.: Projeto de site escolar"></label>
+              <label class="full">Informações adicionais<textarea id="additional" rows="2" placeholder="Outras informações relevantes (opcional)."></textarea></label>
+            </div>
+          </div>
+          <div class="form-actions"><button type="button" class="clear-btn" id="clearBtn">Limpar campos</button><button type="button" class="download-btn" id="downloadBtn">Baixar currículo em PDF <span>↓</span></button></div>
+          <p class="form-note">Dica: revise seus dados antes de baixar. Campos vazios não aparecem no currículo.</p>
+        </form>
+
+        <aside class="preview-panel">
+          <div class="preview-top"><div><span class="eyebrow">VISUALIZAÇÃO AO VIVO</span><h3>Seu currículo</h3></div><span class="live-dot">● Ao vivo</span></div>
+          <div class="preview-paper-wrap">
+            <article id="resumePreview" class="resume classic-resume">
+              <header class="resume-header"><h1 data-out="name">Seu Nome Completo</h1><p data-out="role">Sua área profissional</p><div class="resume-contact" id="outContact">E-mail · Telefone · Cidade</div></header>
+              <div id="previewSections">
+                <section class="resume-section" id="sec-objective"><h2>OBJETIVO PROFISSIONAL</h2><p data-out="objective">Seu objetivo profissional aparecerá aqui.</p></section>
+                <section class="resume-section" id="sec-summary"><h2>RESUMO PROFISSIONAL</h2><p data-out="summary">Apresente um breve resumo sobre você.</p></section>
+                <section class="resume-section" id="sec-education"><h2>FORMAÇÃO ACADÊMICA</h2><p data-out="education">Seu curso e instituição</p><small data-out="educationMeta"></small></section>
+                <section class="resume-section" id="sec-experience"><h2>EXPERIÊNCIA PROFISSIONAL</h2><p data-out="jobLine">Cargo · Empresa</p><small data-out="jobDate"></small><p data-out="jobDescription"></p></section>
+                <section class="resume-section" id="sec-courses"><h2>CURSOS E CERTIFICAÇÕES</h2><p data-out="courses">Seus cursos aparecerão aqui.</p></section>
+                <section class="resume-section" id="sec-skills"><h2>HABILIDADES E COMPETÊNCIAS</h2><p data-out="skills">Suas habilidades aparecerão aqui.</p></section>
+                <section class="resume-section" id="sec-extra"><h2>INFORMAÇÕES COMPLEMENTARES</h2><p data-out="languages"></p><p data-out="projects"></p><p data-out="additional"></p><p data-out="linkedin"></p></section>
+              </div>
+            </article>
+          </div>
+          <p class="preview-hint">A prévia muda automaticamente conforme você preenche o formulário.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#inicio"><span class="brand-icon">M</span> Meu<span>Currículo</span></a><p>Uma ferramenta simples para apresentar o melhor de você.</p><small>© 2026 MeuCurrículo · Projeto educacional</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
